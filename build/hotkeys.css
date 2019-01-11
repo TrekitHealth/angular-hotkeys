@@ -5,7 +5,7 @@
  * License: MIT
  */
 .cfp-hotkeys-container {
-  display: table !important;
+  display: block !important;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -14,6 +14,7 @@
   color: #333;
   font-size: 1em;
   background-color: rgba(255,255,255,0.9);
+  overflow-y: scroll;
 }
 
 .cfp-hotkeys-container.fade {
@@ -32,22 +33,53 @@
   opacity: 1;
 }
 
+.cfp-hotkeys-wrapper {
+  display: table;
+  width: 100%;
+  min-height: 100%;
+}
+
 .cfp-hotkeys-title {
   font-weight: bold;
   text-align: center;
   font-size: 1.2em;
 }
 
+.cfp-hotkeys-category-title {
+  font-weight: bold;
+  font-size: 1.0em;
+  padding: 14px 0 10px 70px;
+}
+
 .cfp-hotkeys {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
 
+.cfp-hotkeys-category-container {
+  margin: 0 auto;
+  display: table;
+}
+
+.cfp-hotkeys-category-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .cfp-hotkeys table {
-  margin: auto;
+  margin: 0 25px 0 0;
   color: #333;
+  float: left;
+  width: 300px;
+}
+
+.cfp-hotkeys-category-container table:nth-child(2n+3) {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .cfp-content {
@@ -58,6 +90,7 @@
 .cfp-hotkeys-keys {
   padding: 5px;
   text-align: right;
+  width: 45%;
 }
 
 .cfp-hotkeys-key {

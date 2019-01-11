@@ -1,0 +1,30 @@
+{
+  "name": "angular-hotkeys",
+  "main": [
+    "build/hotkeys.js",
+    "build/hotkeys.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "example"
+  ],
+  "devDependencies": {
+    "mousetrap": "~1.5.2",
+    "angular-mocks": "~1.2.15",
+    "angular-route": "~1.2.15"
+  },
+  "homepage": "https://github.com/gastonelhordoy/angular-hotkeys",
+  "_release": "9b8f58cee1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "hotkey-categories",
+    "commit": "9b8f58cee16df9e070c0c78bf4d5d19c486f16c4"
+  },
+  "_source": "https://github.com/gastonelhordoy/angular-hotkeys.git",
+  "_target": "hotkey-categories",
+  "_originalSource": "https://github.com/gastonelhordoy/angular-hotkeys.git",
+  "_direct": true
+}
